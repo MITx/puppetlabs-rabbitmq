@@ -17,7 +17,7 @@
 #  stdlib
 # Sample Usage:
 #
-#  
+#
 #
 #
 # [Remember: No empty lines between comments and class definition]
@@ -94,8 +94,8 @@ class rabbitmq::server(
   }
 
   class { 'rabbitmq::service':
-    service_name => $service_name,
     ensure       => $service_ensure,
+    service_name => $service_name,
   }
 
   if $delete_guest_user {
