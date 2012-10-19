@@ -108,7 +108,7 @@ class rabbitmq::server(
   }
 
   file { 'erlang_cookie':
-    path =>"/var/lib/rabbitmq/.erlang.cookie",
+    path    => '/var/lib/rabbitmq/.erlang.cookie',
     owner   => rabbitmq,
     group   => rabbitmq,
     mode    => '0400',
